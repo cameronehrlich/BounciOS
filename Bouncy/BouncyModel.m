@@ -1,10 +1,10 @@
-    //
-    //  BouncyModel.m
-    //  Bouncy
-    //
-    //  Created by Glenn Sugden on 2011.08.02.
-    //  Copyright 2011 UC:Berkeley. All rights reserved.
-    //
+//
+//  BouncyModel.m
+//  Bouncy
+//
+//  Created by Glenn Sugden on 2011.08.02.
+//  Copyright 2011 UC:Berkeley. All rights reserved.
+//
 
 #import "BouncyModel.h"
 
@@ -45,15 +45,15 @@ const NSInteger kBallSize = 48;
              xVelocity:(NSInteger)xVel yVelocity:(NSInteger)yVel
 {
     self = [super init];
-
+    
     if (self)
     {
         _xPosition = xPos;
         _yPosition = yPos;
-
+        
         _xVelocity = xVel;
         _yVelocity = yVel;
-
+        
         _size = ( random() % ( kBallSize / 2 ) ) + ( kBallSize / 2 );
     }
     return (self);
@@ -65,10 +65,10 @@ const NSInteger kBallSize = 48;
     NSInteger topEdge = bounds.origin.y;
     NSInteger rightEdge = ( bounds.origin.x + bounds.size.width );
     NSInteger bottomEdge = ( bounds.origin.x + bounds.size.height );
-
+    
     _xPosition += _xVelocity;
     _yPosition += _yVelocity;
-
+    
     if (wrapON == NO)
     {
         if ( ((_xPosition + _size) > rightEdge) || (_xPosition < leftEdge) )
@@ -76,7 +76,7 @@ const NSInteger kBallSize = 48;
             _xVelocity = -_xVelocity;
             _xPosition += _xVelocity;
         }
-
+        
         if ( ((_yPosition + _size) > bottomEdge) || (_yPosition < topEdge) )
         {
             _yVelocity = -_yVelocity;
@@ -93,7 +93,7 @@ const NSInteger kBallSize = 48;
         {
             _xPosition = rightEdge;
         }
-
+        
         if ( _yPosition > bottomEdge )
         {
             _yPosition = topEdge;
@@ -108,7 +108,7 @@ const NSInteger kBallSize = 48;
 -(CGRect)bounds
 {
     CGRect boundsRect = CGRectMake(_xPosition,_yPosition,_size,_size);
-
+    
     return(boundsRect);
 }
 
@@ -126,7 +126,7 @@ const NSInteger kBallSize = 48;
         _bounds = rect;
         _wrap = NO;
     }
-
+    
     return self;
 }
 
@@ -162,41 +162,41 @@ const NSInteger kBallSize = 48;
 -(void)createAndAddNewBall
 {
     Ball* newBall;
-
+    
     NSInteger leftEdge = _bounds.origin.x;
     NSInteger topEdge = _bounds.origin.y;
     NSInteger rightEdge = ( _bounds.origin.x + _bounds.size.width );
     NSInteger bottomEdge = ( _bounds.origin.x + _bounds.size.height );
-
+    
     NSInteger _xPosition;
     NSInteger _yPosition;
-
+    
     do
     {
         _xPosition = ( random( ) % ( rightEdge - leftEdge - kBallSize ) ) + leftEdge;
         _yPosition = ( random( ) % ( bottomEdge - topEdge - kBallSize ) ) + topEdge;
     }
     while ([self CheckCollisionWith:_xPosition andWith:_yPosition using:-1]);
-
+    
     NSInteger _xVelocity;
     NSInteger _yVelocity;
-
+    
     do
     {
         _xVelocity = ( ( random( ) % 800 ) - 400 ) / 100;
         _yVelocity = ( ( random( ) % 800 ) - 400 ) / 100;
     }
     while((_xVelocity==0) || (_yVelocity==0));
-
+    
     newBall = [[Ball alloc] initWithXPosition:_xPosition yPosition:_yPosition
-                                     xVelocity:_xVelocity yVelocity:_yVelocity];
+                                    xVelocity:_xVelocity yVelocity:_yVelocity];
     [_balls addObject:newBall];
 }
 
 -(void)changeNumberOfBalls:(NSInteger)newNumberOfBalls
 {
     NSInteger differenceInBallCount = newNumberOfBalls - [_balls count];
-
+    
     if ( differenceInBallCount < 0 )
     {
         while ( ( differenceInBallCount++ ) < 0 )
@@ -220,23 +220,23 @@ const NSInteger kBallSize = 48;
         for (NSInteger ballIndex = 0; ballIndex < [_balls count]; ballIndex ++)
         {
             Ball* ball = [_balls objectAtIndex:ballIndex];
-
+            
             NSInteger futurePositionX = ball._xPosition + ball._xVelocity;
             NSInteger futurePositionY = ball._yPosition + ball._yVelocity;
-
+            
             if ([self CheckCollisionWith:futurePositionX andWith:futurePositionY using:ballIndex])
             {
                 NSInteger futureVerticleX = ball._xPosition;
                 NSInteger futureVerticleY = ball._yPosition + ball._yVelocity;
-
+                
                 if ([self CheckCollisionWith:futureVerticleX andWith:futureVerticleY using:ballIndex])
                 {
                     ball._yVelocity = -ball._yVelocity;
                 }
-
+                
                 NSInteger futureHorizontalX = ball._xPosition + ball._xVelocity;
                 NSInteger futureHorizontalY = ball._yPosition;
-
+                
                 if ([self CheckCollisionWith:futureHorizontalX
                                      andWith:futureHorizontalY using:ballIndex])
                 {
@@ -253,18 +253,18 @@ const NSInteger kBallSize = 48;
     NSInteger bottom = futureY;
     NSInteger right = futureX + kBallSize;
     NSInteger top = futureY + kBallSize;
-
+    
     for (NSInteger ballIndex = 0; ballIndex < [_balls count]; ballIndex ++)
     {
         if ( ballIndex != thisBallIndex )
         {
             CGRect checkBallRect = [self ballBounds:ballIndex];
-
+            
             NSInteger checkLeft = checkBallRect.origin.x;
             NSInteger checkBottom = checkBallRect.origin.y;
             NSInteger checkRight = checkBallRect.origin.x + checkBallRect.size.width;
             NSInteger checkTop = checkBallRect.origin.y + checkBallRect.size.height;
-
+            
             if (right <= checkLeft)
             {
                 continue;

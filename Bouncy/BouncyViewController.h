@@ -7,7 +7,6 @@
 // or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 
 #import <Cocoa/Cocoa.h>
-
 #import "BouncyView.h"
 #import "BouncyModel.h"
 
@@ -20,7 +19,7 @@
     BOOL _running;
 }
 
-@property (retain) IBOutlet BouncyView* _ourView;
+@property (strong, nonatomic) IBOutlet BouncyView *ourView;
 
 -(NSInteger)askModelForNumberOfBalls;
 -(CGRect)askModelForBallBounds:(NSInteger) whichBall;

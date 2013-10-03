@@ -18,7 +18,6 @@
 		3D88C45317FD0C4200C5C7A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C45217FD0C4200C5C7A7 /* Default-568h@2x.png */; };
 		3D88C45617FD0C4200C5C7A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */; };
 		3D88C45917FD0C4200C5C7A7 /* BounciOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88C45817FD0C4200C5C7A7 /* BounciOSViewController.m */; };
-		3D88C45D17FD0C7800C5C7A7 /* BouncyModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED213E8DE00006D2AD6 /* BouncyModel.h */; };
 		3D88C45E17FD0C7B00C5C7A7 /* BouncyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED313E8DE00006D2AD6 /* BouncyModel.m */; };
 		9335DEAB13E8C362006D2AD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335DEAA13E8C362006D2AD6 /* Cocoa.framework */; };
 		9335DEB513E8C362006D2AD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9335DEB313E8C362006D2AD6 /* InfoPlist.strings */; };
@@ -29,6 +28,7 @@
 		9335DECA13E8D98B006D2AD6 /* BouncyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */; };
 		9335DED113E8DCA9006D2AD6 /* BouncyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED013E8DCA9006D2AD6 /* BouncyView.m */; };
 		9335DED413E8DE00006D2AD6 /* BouncyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED313E8DE00006D2AD6 /* BouncyModel.m */; };
+		DFB2422517FD11BE00247BFF /* BounciOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB2422417FD11BE00247BFF /* BounciOSView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +65,10 @@
 		9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyViewController.m; sourceTree = "<group>"; };
 		9335DECF13E8DCA9006D2AD6 /* BouncyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyView.h; sourceTree = "<group>"; };
 		9335DED013E8DCA9006D2AD6 /* BouncyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyView.m; sourceTree = "<group>"; };
-		9335DED213E8DE00006D2AD6 /* BouncyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyModel.h; sourceTree = "<group>"; };
-		9335DED313E8DE00006D2AD6 /* BouncyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyModel.m; sourceTree = "<group>"; };
+		9335DED213E8DE00006D2AD6 /* BouncyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BouncyModel.h; path = Bouncy/BouncyModel.h; sourceTree = "<group>"; };
+		9335DED313E8DE00006D2AD6 /* BouncyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BouncyModel.m; path = Bouncy/BouncyModel.m; sourceTree = "<group>"; };
+		DFB2422317FD11BE00247BFF /* BounciOSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounciOSView.h; sourceTree = "<group>"; };
+		DFB2422417FD11BE00247BFF /* BounciOSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounciOSView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +96,13 @@
 		3D88C44217FD0C4100C5C7A7 /* BounciOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */,
 				3D88C44B17FD0C4200C5C7A7 /* BounciOSAppDelegate.h */,
 				3D88C44C17FD0C4200C5C7A7 /* BounciOSAppDelegate.m */,
-				3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */,
 				3D88C45717FD0C4200C5C7A7 /* BounciOSViewController.h */,
 				3D88C45817FD0C4200C5C7A7 /* BounciOSViewController.m */,
+				DFB2422317FD11BE00247BFF /* BounciOSView.h */,
+				DFB2422417FD11BE00247BFF /* BounciOSView.m */,
 				3D88C44317FD0C4100C5C7A7 /* Supporting Files */,
 			);
 			path = BounciOS;
@@ -121,6 +125,8 @@
 		9335DE9B13E8C362006D2AD6 = {
 			isa = PBXGroup;
 			children = (
+				9335DED213E8DE00006D2AD6 /* BouncyModel.h */,
+				9335DED313E8DE00006D2AD6 /* BouncyModel.m */,
 				9335DEB013E8C362006D2AD6 /* Bouncy */,
 				3D88C44217FD0C4100C5C7A7 /* BounciOS */,
 				9335DEA913E8C362006D2AD6 /* Frameworks */,
@@ -162,15 +168,13 @@
 		9335DEB013E8C362006D2AD6 /* Bouncy */ = {
 			isa = PBXGroup;
 			children = (
+				9335DEBF13E8C363006D2AD6 /* MainMenu.xib */,
 				9335DEBC13E8C362006D2AD6 /* BouncyAppDelegate.h */,
 				9335DEBD13E8C362006D2AD6 /* BouncyAppDelegate.m */,
 				9335DEC713E8D98B006D2AD6 /* BouncyViewController.h */,
 				9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */,
 				9335DECF13E8DCA9006D2AD6 /* BouncyView.h */,
 				9335DED013E8DCA9006D2AD6 /* BouncyView.m */,
-				9335DED213E8DE00006D2AD6 /* BouncyModel.h */,
-				9335DED313E8DE00006D2AD6 /* BouncyModel.m */,
-				9335DEBF13E8C363006D2AD6 /* MainMenu.xib */,
 				9335DEB113E8C362006D2AD6 /* Supporting Files */,
 			);
 			path = Bouncy;
@@ -231,8 +235,8 @@
 		9335DE9D13E8C362006D2AD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "UC:Berkeley";
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MSDOSX;
 			};
 			buildConfigurationList = 9335DEA013E8C362006D2AD6 /* Build configuration list for PBXProject "Bouncy" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -285,8 +289,8 @@
 				3D88C44917FD0C4100C5C7A7 /* main.m in Sources */,
 				3D88C44D17FD0C4200C5C7A7 /* BounciOSAppDelegate.m in Sources */,
 				3D88C45917FD0C4200C5C7A7 /* BounciOSViewController.m in Sources */,
-				3D88C45D17FD0C7800C5C7A7 /* BouncyModel.h in Sources */,
 				3D88C45E17FD0C7B00C5C7A7 /* BouncyModel.m in Sources */,
+				DFB2422517FD11BE00247BFF /* BounciOSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -423,8 +431,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -435,6 +445,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -443,8 +457,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -452,7 +468,7 @@
 		9335DEC513E8C363006D2AD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -467,7 +483,7 @@
 		9335DEC613E8C363006D2AD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -489,6 +505,7 @@
 				3D88C45B17FD0C4200C5C7A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9335DEA013E8C362006D2AD6 /* Build configuration list for PBXProject "Bouncy" */ = {
 			isa = XCConfigurationList;

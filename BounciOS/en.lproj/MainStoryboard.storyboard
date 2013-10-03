@@ -1,23 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--BounciOS View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="BounciOSViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                    <view key="view" contentMode="scaleToFill" id="3" customClass="BounciOSView">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="30" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="CTk-fu-ODB">
+                                <connections>
+                                    <action selector="speedSliderMoved:" destination="2" eventType="valueChanged" id="clo-dj-IG8"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bAD-UX-NeG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="ks5-Ye-UeQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ballsSliderMoved:" destination="2" eventType="valueChanged" id="JoT-So-Plw"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Balls" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxL-w6-eqU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ZuH-0y-gZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Speed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-Qg-SWZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="lqS-zw-kwf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4d-Rw-qhb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="tf5-OC-3yg"/>
+                                    <constraint firstAttribute="width" constant="66" id="zWP-TI-jgH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopButtonPressed:" destination="2" eventType="touchUpInside" id="mkC-qT-YOi"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-BT-Lo5">
+                                <connections>
+                                    <action selector="wrapCheckBoxPressed:" destination="2" eventType="valueChanged" id="VqB-tZ-9un"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wrap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxY-9I-0Di">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xMb-BT-Lo5" secondAttribute="trailing" constant="29" id="0uc-Jg-GDc"/>
+                            <constraint firstItem="d4d-Rw-qhb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4n9-Ib-gTc"/>
+                            <constraint firstItem="bAD-UX-NeG" firstAttribute="trailing" secondItem="CTk-fu-ODB" secondAttribute="trailing" type="default" id="4r1-wd-Nk8"/>
+                            <constraint firstItem="CTk-fu-ODB" firstAttribute="top" secondItem="bAD-UX-NeG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9sx-7x-KDV"/>
+                            <constraint firstItem="lxY-9I-0Di" firstAttribute="baseline" secondItem="d4d-Rw-qhb" secondAttribute="baseline" type="default" id="BTS-MP-Uwd"/>
+                            <constraint firstItem="bAD-UX-NeG" firstAttribute="leading" secondItem="CTk-fu-ODB" secondAttribute="leading" type="default" id="E2t-oG-YKr"/>
+                            <constraint firstItem="xMb-BT-Lo5" firstAttribute="leading" secondItem="lxY-9I-0Di" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="EYh-Th-EZt"/>
+                            <constraint firstItem="XxL-w6-eqU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="2" id="P2s-b4-cFw"/>
+                            <constraint firstItem="bAD-UX-NeG" firstAttribute="leading" secondItem="XxL-w6-eqU" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Tx9-cK-nUn"/>
+                            <constraint firstItem="XxL-w6-eqU" firstAttribute="top" secondItem="bAD-UX-NeG" secondAttribute="top" type="default" id="bTM-cK-sRd"/>
+                            <constraint firstItem="NHX-Qg-SWZ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="djN-44-oxj"/>
+                            <constraint firstAttribute="bottom" secondItem="xMb-BT-Lo5" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="gBN-Ql-rWr"/>
+                            <constraint firstItem="xMb-BT-Lo5" firstAttribute="top" secondItem="CTk-fu-ODB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="j05-r7-gJm"/>
+                            <constraint firstItem="d4d-Rw-qhb" firstAttribute="top" secondItem="lxY-9I-0Di" secondAttribute="top" type="default" id="nbu-7F-DEM"/>
+                            <constraint firstItem="NHX-Qg-SWZ" firstAttribute="bottom" secondItem="CTk-fu-ODB" secondAttribute="bottom" type="default" id="omN-w9-8ee"/>
+                            <constraint firstAttribute="bottom" secondItem="d4d-Rw-qhb" secondAttribute="bottom" constant="18" id="qbX-R5-g62"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="ourViewController" destination="2" id="nLk-Tg-2a3"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="ourView" destination="3" id="ccS-a3-8MQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="BounciOSView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BounciOSView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ourViewController" candidateClass="BounciOSViewController"/>
+            </relationships>
+        </class>
+        <class className="BounciOSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BounciOSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ballsSliderMoved:" candidateClass="UISlider"/>
+                <relationship kind="action" name="speedSliderMoved:" candidateClass="UISlider"/>
+                <relationship kind="action" name="startStopButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="wrapCheckBoxPressed:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="ourView" candidateClass="BounciOSView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

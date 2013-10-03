@@ -1,28 +1,25 @@
 //
-//  BouncyView.m
+//  BounciOSView.m
 //  Bouncy
 //
-//  Created by Glenn Sugden on 2011.08.02.
-//  Copyright 2011 UC:Berkeley. All rights reserved.
+//  Created by Class Account on 10/2/13.
+//  Copyright (c) 2013 UC:Berkeley. All rights reserved.
 //
 
-#import "BouncyView.h"
+#import "BounciOSView.h"
+#import "BounciOSViewController.h"
 
-#import "BouncyViewController.h"
-
-@implementation BouncyView
-
-@synthesize _ourViewController;
+@implementation BounciOSView
 
 - (void)drawRect:(CGRect)dirtyRect
 {
     NSInteger numberOfBalls = [_ourViewController askModelForNumberOfBalls];
     
-    [[NSColor blackColor] setStroke];
+    [[UIColor blackColor] setStroke];
     
     if ( [_ourViewController askModelForWrapping] == NO )
     {
-        NSBezierPath* framePath = [NSBezierPath bezierPathWithRect: [self bounds]];
+        UIBezierPath* framePath = [UIBezierPath bezierPathWithRect: [self bounds]];
         
         [framePath stroke];
     }
@@ -31,7 +28,7 @@
     {
         CGRect ballBounds = [_ourViewController askModelForBallBounds:ballIndex];
         
-        NSBezierPath* circlePath = [NSBezierPath bezierPathWithOvalInRect: ballBounds];
+        UIBezierPath* circlePath = [UIBezierPath bezierPathWithOvalInRect: ballBounds];
         
         [circlePath setLineWidth:(CGFloat)4.0];
         
@@ -40,5 +37,6 @@
         [circlePath stroke];
     }
 }
+
 
 @end
