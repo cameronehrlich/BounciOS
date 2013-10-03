@@ -91,6 +91,12 @@
     }
 }
 
+
+-(tColor*)askModelForBallColor:(NSInteger) whichBall
+{
+    return [_ourModel ballColor:whichBall];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -28,4 +28,7 @@
 -(IBAction)startStopButtonPressed:(UIButton*)sender;
 -(IBAction)wrapCheckBoxPressed:(UISwitch*)sender;
 -(BOOL)askModelForWrapping;
+
+-(tColor*)askModelForBallColor:(NSInteger) whichBall;
+
 @end

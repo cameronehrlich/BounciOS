@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#if TARGET_OS_IPHONE | TARGET_IPHONE_SIMULATOR
+    typedef UIColor tColor;
+#else
+    typedef NSColor tColor;
+#endif
+
 @interface BouncyModel : NSObject
 {
 @private
@@ -15,6 +21,7 @@
     CGRect _bounds;
     BOOL _wrap;
 }
+
 -(id)initWithBounds:(CGRect)rect;
 -(NSInteger)numberOfBalls;
 -(CGRect)ballBounds:(NSInteger)whichBall;
@@ -25,4 +32,7 @@
 -(BOOL)CheckCollisionWith:(NSInteger)futureX andWith:(NSInteger)futureY using:(NSInteger)thisBallIndex;
 -(void)wrapping:(BOOL)wrapOn;
 -(BOOL)wrapping;
+
+-(tColor*)ballColor:(NSInteger) whichBall;
+
 @end

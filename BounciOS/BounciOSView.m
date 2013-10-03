@@ -29,8 +29,11 @@
         CGRect ballBounds = [_ourViewController askModelForBallBounds:ballIndex];
         
         UIBezierPath* circlePath = [UIBezierPath bezierPathWithOvalInRect: ballBounds];
-        
         [circlePath setLineWidth:(CGFloat)4.0];
+        
+        // Set new fill color
+        tColor *ballColor = [_ourViewController askModelForBallColor:ballIndex];
+        [ballColor setFill];
         
         [circlePath fill];
         

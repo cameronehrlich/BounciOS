@@ -10,6 +10,7 @@
 
 const NSInteger kBallSize = 48;
 
+
 @interface Ball : NSObject
 {
 @private
@@ -18,6 +19,7 @@ const NSInteger kBallSize = 48;
     NSInteger _xVelocity;
     NSInteger _yVelocity;
     NSInteger _size;
+    tColor    *_color;
 }
 
 @property (assign) NSInteger _xPosition;
@@ -25,6 +27,7 @@ const NSInteger kBallSize = 48;
 @property (assign) NSInteger _xVelocity;
 @property (assign) NSInteger _yVelocity;
 @property (assign) NSInteger _size;
+@property (strong, nonatomic) tColor *_color;
 
 -(id)initWithXPosition:(NSInteger)xPos yPosition:(NSInteger)yPos
              xVelocity:(NSInteger)xVel yVelocity:(NSInteger)yVel;
@@ -40,6 +43,7 @@ const NSInteger kBallSize = 48;
 @synthesize _xVelocity;
 @synthesize _yVelocity;
 @synthesize _size;
+@synthesize _color;
 
 -(id)initWithXPosition:(NSInteger)xPos yPosition:(NSInteger)yPos
              xVelocity:(NSInteger)xVel yVelocity:(NSInteger)yVel
@@ -55,6 +59,18 @@ const NSInteger kBallSize = 48;
         _yVelocity = yVel;
         
         _size = ( random() % ( kBallSize / 2 ) ) + ( kBallSize / 2 );
+        
+        // Begin color code
+        CGFloat red = (CGFloat)((random()%100)/100.0);
+        CGFloat green = (CGFloat)((random()%100)/100.0);
+        CGFloat blue = (CGFloat)((random()%100)/100.0);
+        
+#if TARGET_OS_IPHONE | TARGET_IPHONE_SIMULATOR
+        _color = [UIColor colorWithRed:red green:green blue:blue alpha:1.0F];
+#else
+        _color = [NSColor colorWithSRGBRed:red green:green blue:blue alpha:1.0F];
+#endif
+        
     }
     return (self);
 }
@@ -297,6 +313,11 @@ const NSInteger kBallSize = 48;
         }
     }
     return NO;
+}
+
+-(tColor*)ballColor:(NSInteger) whichBall
+{
+    return [[_balls objectAtIndex:whichBall] _color];
 }
 
 @end
