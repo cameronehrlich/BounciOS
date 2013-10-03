@@ -7,31 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D88C43D17FD0C4100C5C7A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D88C43C17FD0C4100C5C7A7 /* UIKit.framework */; };
+		3D88C43F17FD0C4100C5C7A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D88C43E17FD0C4100C5C7A7 /* Foundation.framework */; };
+		3D88C44117FD0C4100C5C7A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D88C44017FD0C4100C5C7A7 /* CoreGraphics.framework */; };
+		3D88C44717FD0C4100C5C7A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C44517FD0C4100C5C7A7 /* InfoPlist.strings */; };
+		3D88C44917FD0C4100C5C7A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88C44817FD0C4100C5C7A7 /* main.m */; };
+		3D88C44D17FD0C4200C5C7A7 /* BounciOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88C44C17FD0C4200C5C7A7 /* BounciOSAppDelegate.m */; };
+		3D88C44F17FD0C4200C5C7A7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C44E17FD0C4200C5C7A7 /* Default.png */; };
+		3D88C45117FD0C4200C5C7A7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C45017FD0C4200C5C7A7 /* Default@2x.png */; };
+		3D88C45317FD0C4200C5C7A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C45217FD0C4200C5C7A7 /* Default-568h@2x.png */; };
+		3D88C45617FD0C4200C5C7A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */; };
+		3D88C45917FD0C4200C5C7A7 /* BounciOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88C45817FD0C4200C5C7A7 /* BounciOSViewController.m */; };
+		3D88C45D17FD0C7800C5C7A7 /* BouncyModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED213E8DE00006D2AD6 /* BouncyModel.h */; };
+		3D88C45E17FD0C7B00C5C7A7 /* BouncyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED313E8DE00006D2AD6 /* BouncyModel.m */; };
 		9335DEAB13E8C362006D2AD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9335DEAA13E8C362006D2AD6 /* Cocoa.framework */; };
 		9335DEB513E8C362006D2AD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9335DEB313E8C362006D2AD6 /* InfoPlist.strings */; };
 		9335DEB713E8C362006D2AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DEB613E8C362006D2AD6 /* main.m */; };
 		9335DEBB13E8C362006D2AD6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9335DEB913E8C362006D2AD6 /* Credits.rtf */; };
 		9335DEBE13E8C362006D2AD6 /* BouncyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DEBD13E8C362006D2AD6 /* BouncyAppDelegate.m */; };
 		9335DEC113E8C363006D2AD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9335DEBF13E8C363006D2AD6 /* MainMenu.xib */; };
+		9335DECA13E8D98B006D2AD6 /* BouncyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */; };
+		9335DED113E8DCA9006D2AD6 /* BouncyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED013E8DCA9006D2AD6 /* BouncyView.m */; };
+		9335DED413E8DE00006D2AD6 /* BouncyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9335DED313E8DE00006D2AD6 /* BouncyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D88C43B17FD0C4100C5C7A7 /* BounciOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BounciOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D88C43C17FD0C4100C5C7A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D88C43E17FD0C4100C5C7A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D88C44017FD0C4100C5C7A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3D88C44417FD0C4100C5C7A7 /* BounciOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BounciOS-Info.plist"; sourceTree = "<group>"; };
+		3D88C44617FD0C4100C5C7A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D88C44817FD0C4100C5C7A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D88C44A17FD0C4200C5C7A7 /* BounciOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BounciOS-Prefix.pch"; sourceTree = "<group>"; };
+		3D88C44B17FD0C4200C5C7A7 /* BounciOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounciOSAppDelegate.h; sourceTree = "<group>"; };
+		3D88C44C17FD0C4200C5C7A7 /* BounciOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounciOSAppDelegate.m; sourceTree = "<group>"; };
+		3D88C44E17FD0C4200C5C7A7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D88C45017FD0C4200C5C7A7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D88C45217FD0C4200C5C7A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D88C45517FD0C4200C5C7A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3D88C45717FD0C4200C5C7A7 /* BounciOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounciOSViewController.h; sourceTree = "<group>"; };
+		3D88C45817FD0C4200C5C7A7 /* BounciOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounciOSViewController.m; sourceTree = "<group>"; };
 		9335DEA613E8C362006D2AD6 /* Bouncy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bouncy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9335DEAA13E8C362006D2AD6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9335DEAD13E8C362006D2AD6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		9335DEAE13E8C362006D2AD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9335DEAF13E8C362006D2AD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9335DEB213E8C362006D2AD6 /* Bouncy-Info.plist */ = {isa = PBXFileReference; path = "Bouncy-Info.plist"; sourceTree = "<group>"; };
+		9335DEB213E8C362006D2AD6 /* Bouncy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bouncy-Info.plist"; sourceTree = "<group>"; };
 		9335DEB413E8C362006D2AD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9335DEB613E8C362006D2AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9335DEB813E8C362006D2AD6 /* Bouncy-Prefix.pch */ = {isa = PBXFileReference; path = "Bouncy-Prefix.pch"; sourceTree = "<group>"; };
+		9335DEB813E8C362006D2AD6 /* Bouncy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bouncy-Prefix.pch"; sourceTree = "<group>"; };
 		9335DEBA13E8C362006D2AD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		9335DEBC13E8C362006D2AD6 /* BouncyAppDelegate.h */ = {isa = PBXFileReference; path = BouncyAppDelegate.h; sourceTree = "<group>"; };
+		9335DEBC13E8C362006D2AD6 /* BouncyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncyAppDelegate.h; sourceTree = "<group>"; };
 		9335DEBD13E8C362006D2AD6 /* BouncyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncyAppDelegate.m; sourceTree = "<group>"; };
 		9335DEC013E8C363006D2AD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9335DEC713E8D98B006D2AD6 /* BouncyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyViewController.h; sourceTree = "<group>"; };
+		9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyViewController.m; sourceTree = "<group>"; };
+		9335DECF13E8DCA9006D2AD6 /* BouncyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyView.h; sourceTree = "<group>"; };
+		9335DED013E8DCA9006D2AD6 /* BouncyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyView.m; sourceTree = "<group>"; };
+		9335DED213E8DE00006D2AD6 /* BouncyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncyModel.h; sourceTree = "<group>"; };
+		9335DED313E8DE00006D2AD6 /* BouncyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D88C43817FD0C4100C5C7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D88C43D17FD0C4100C5C7A7 /* UIKit.framework in Frameworks */,
+				3D88C43F17FD0C4100C5C7A7 /* Foundation.framework in Frameworks */,
+				3D88C44117FD0C4100C5C7A7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9335DEA313E8C362006D2AD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +91,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D88C44217FD0C4100C5C7A7 /* BounciOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D88C44B17FD0C4200C5C7A7 /* BounciOSAppDelegate.h */,
+				3D88C44C17FD0C4200C5C7A7 /* BounciOSAppDelegate.m */,
+				3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */,
+				3D88C45717FD0C4200C5C7A7 /* BounciOSViewController.h */,
+				3D88C45817FD0C4200C5C7A7 /* BounciOSViewController.m */,
+				3D88C44317FD0C4100C5C7A7 /* Supporting Files */,
+			);
+			path = BounciOS;
+			sourceTree = "<group>";
+		};
+		3D88C44317FD0C4100C5C7A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D88C44417FD0C4100C5C7A7 /* BounciOS-Info.plist */,
+				3D88C44517FD0C4100C5C7A7 /* InfoPlist.strings */,
+				3D88C44817FD0C4100C5C7A7 /* main.m */,
+				3D88C44A17FD0C4200C5C7A7 /* BounciOS-Prefix.pch */,
+				3D88C44E17FD0C4200C5C7A7 /* Default.png */,
+				3D88C45017FD0C4200C5C7A7 /* Default@2x.png */,
+				3D88C45217FD0C4200C5C7A7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9335DE9B13E8C362006D2AD6 = {
 			isa = PBXGroup;
 			children = (
 				9335DEB013E8C362006D2AD6 /* Bouncy */,
+				3D88C44217FD0C4100C5C7A7 /* BounciOS */,
 				9335DEA913E8C362006D2AD6 /* Frameworks */,
 				9335DEA713E8C362006D2AD6 /* Products */,
 			);
@@ -56,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				9335DEA613E8C362006D2AD6 /* Bouncy.app */,
+				3D88C43B17FD0C4100C5C7A7 /* BounciOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				9335DEAA13E8C362006D2AD6 /* Cocoa.framework */,
+				3D88C43C17FD0C4100C5C7A7 /* UIKit.framework */,
+				3D88C43E17FD0C4100C5C7A7 /* Foundation.framework */,
+				3D88C44017FD0C4100C5C7A7 /* CoreGraphics.framework */,
 				9335DEAC13E8C362006D2AD6 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -84,11 +164,17 @@
 			children = (
 				9335DEBC13E8C362006D2AD6 /* BouncyAppDelegate.h */,
 				9335DEBD13E8C362006D2AD6 /* BouncyAppDelegate.m */,
+				9335DEC713E8D98B006D2AD6 /* BouncyViewController.h */,
+				9335DEC813E8D98B006D2AD6 /* BouncyViewController.m */,
+				9335DECF13E8DCA9006D2AD6 /* BouncyView.h */,
+				9335DED013E8DCA9006D2AD6 /* BouncyView.m */,
+				9335DED213E8DE00006D2AD6 /* BouncyModel.h */,
+				9335DED313E8DE00006D2AD6 /* BouncyModel.m */,
 				9335DEBF13E8C363006D2AD6 /* MainMenu.xib */,
 				9335DEB113E8C362006D2AD6 /* Supporting Files */,
 			);
 			path = Bouncy;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		9335DEB113E8C362006D2AD6 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -105,6 +191,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D88C43A17FD0C4100C5C7A7 /* BounciOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D88C45C17FD0C4200C5C7A7 /* Build configuration list for PBXNativeTarget "BounciOS" */;
+			buildPhases = (
+				3D88C43717FD0C4100C5C7A7 /* Sources */,
+				3D88C43817FD0C4100C5C7A7 /* Frameworks */,
+				3D88C43917FD0C4100C5C7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BounciOS;
+			productName = BounciOS;
+			productReference = 3D88C43B17FD0C4100C5C7A7 /* BounciOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9335DEA513E8C362006D2AD6 /* Bouncy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9335DEC413E8C363006D2AD6 /* Build configuration list for PBXNativeTarget "Bouncy" */;
@@ -128,6 +231,7 @@
 		9335DE9D13E8C362006D2AD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "UC:Berkeley";
 			};
 			buildConfigurationList = 9335DEA013E8C362006D2AD6 /* Build configuration list for PBXProject "Bouncy" */;
@@ -143,11 +247,24 @@
 			projectRoot = "";
 			targets = (
 				9335DEA513E8C362006D2AD6 /* Bouncy */,
+				3D88C43A17FD0C4100C5C7A7 /* BounciOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D88C43917FD0C4100C5C7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D88C44717FD0C4100C5C7A7 /* InfoPlist.strings in Resources */,
+				3D88C44F17FD0C4200C5C7A7 /* Default.png in Resources */,
+				3D88C45117FD0C4200C5C7A7 /* Default@2x.png in Resources */,
+				3D88C45317FD0C4200C5C7A7 /* Default-568h@2x.png in Resources */,
+				3D88C45617FD0C4200C5C7A7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9335DEA413E8C362006D2AD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,18 +278,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D88C43717FD0C4100C5C7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D88C44917FD0C4100C5C7A7 /* main.m in Sources */,
+				3D88C44D17FD0C4200C5C7A7 /* BounciOSAppDelegate.m in Sources */,
+				3D88C45917FD0C4200C5C7A7 /* BounciOSViewController.m in Sources */,
+				3D88C45D17FD0C7800C5C7A7 /* BouncyModel.h in Sources */,
+				3D88C45E17FD0C7B00C5C7A7 /* BouncyModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9335DEA213E8C362006D2AD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9335DEB713E8C362006D2AD6 /* main.m in Sources */,
 				9335DEBE13E8C362006D2AD6 /* BouncyAppDelegate.m in Sources */,
+				9335DECA13E8D98B006D2AD6 /* BouncyViewController.m in Sources */,
+				9335DED113E8DCA9006D2AD6 /* BouncyView.m in Sources */,
+				9335DED413E8DE00006D2AD6 /* BouncyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3D88C44517FD0C4100C5C7A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D88C44617FD0C4100C5C7A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D88C45417FD0C4200C5C7A7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D88C45517FD0C4200C5C7A7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		9335DEB313E8C362006D2AD6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -200,6 +348,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D88C45A17FD0C4200C5C7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BounciOS/BounciOS-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "BounciOS/BounciOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D88C45B17FD0C4200C5C7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BounciOS/BounciOS-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "BounciOS/BounciOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		9335DEC213E8C363006D2AD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -248,9 +452,13 @@
 		9335DEC513E8C363006D2AD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bouncy/Bouncy-Prefix.pch";
 				INFOPLIST_FILE = "Bouncy/Bouncy-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -259,9 +467,13 @@
 		9335DEC613E8C363006D2AD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bouncy/Bouncy-Prefix.pch";
 				INFOPLIST_FILE = "Bouncy/Bouncy-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -270,6 +482,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D88C45C17FD0C4200C5C7A7 /* Build configuration list for PBXNativeTarget "BounciOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D88C45A17FD0C4200C5C7A7 /* Debug */,
+				3D88C45B17FD0C4200C5C7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9335DEA013E8C362006D2AD6 /* Build configuration list for PBXProject "Bouncy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +506,7 @@
 				9335DEC613E8C363006D2AD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
